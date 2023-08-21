@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms Demo</title>
+</head>
+
+<body>
+    <h1>Froms Demo</h1>
+
+    <form action="/tacos">
+        <P>
+            <label for="username">Enter a userNaeme: </label>
+            <input id="username" type="text" placeholder="userName" name="username">
+        </P>
+        <P>
+            <label for="password">Enter password: </label>
+            <input type="password" id="password" name="pw">
+        </P>
+        <p>
+            <label for="color">color: </label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="number">number:</label>
+            <input type="number" id="number" name="num" min="1" max="1000" step="2" placeholder="enter num">
+        </p>
+
+        <button>submit</button>
+    </form>
+
+    <h3>search GOOGLE</h3>
+    <form action="https://www.google.co.kr/search">
+        <input type="text" name="q">
+        <button>to google</button>
+    </form>
+
+    <h3>SEARCH YOUTUBE</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>serach youtube</button>
+    </form>
+
+    <h3> More Inputs</h3>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree"> I agree to everything</label>
+
+        <p>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="s">s</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="m">m</label>
+            <input type="radio" name="size" id="L" value="L">
+            <label for="l">L</label>
+        </p>
+
+        <p>
+            <label for="meal">select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">fish</option>
+                <option value="pork">pork</option>
+                <option value="beef" selected>beef</option>
+                <option value="veg">veg</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of cheese: </label>
+            <input type="range" name="cheese" id="cheese" min="1" max="10" value="3">
+        </p>
+        
+
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
