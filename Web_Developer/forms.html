@@ -71,7 +71,31 @@
             <label for="cheese">Amount of cheese: </label>
             <input type="range" name="cheese" id="cheese" min="1" max="10" value="3">
         </p>
+
+        <p>
+            <label for="request">special request</label>
+            <br>
+            <textarea id="request" name="request" rows="10" cols="20"></textarea>
+            <button>submit</button>
+        </p>
         
+        <button>submit</button>
+    </form>
+
+    <h2>유효성 검사</h2>
+    <form action="/dummy">
+        <label for="first">first name:</label>
+        <input type="text" name="first" required>
+
+        <p>
+            <label for="username">Username:</label>
+            <input name="username" type="text" id="username" minlength="5" maxlength="8" required>
+        </p>
+
+        <p>
+            <input type="email" required>
+            <input type="url" required>
+        </p>
 
         <button>submit</button>
     </form>
