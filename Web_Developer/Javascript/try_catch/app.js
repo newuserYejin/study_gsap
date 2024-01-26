@@ -45,7 +45,13 @@ const movie = [
         score: 95
     }, {
         title: 'Alien',
-        score: 90
+        score: 65
+    }, {
+        title: 'Sharknado',
+        score: 35
+    }, {
+        title: 'Anything',
+        score: 20
     }
 ]
 
@@ -93,3 +99,45 @@ const rolldie = () => (
 
 
 const sum = (a, b) => a + b
+
+// arrow function + this
+
+const person = {
+    firstName: "Viggo",
+    lastName: "Mortensen",
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+
+
+
+
+//fillter 예제
+
+const goodMoviee = movie.filter((movie) => {
+    return movie.score > 80
+})
+
+const goodMTitle = goodMoviee.map(m => m.title)
+
+console.log(`${movie
+    .filter(m => m.score > 80)
+    .map(mm => mm.title)}`)
+
+console.log("===========")
+
+// 예제 2
+function validUserNames(usernames) {
+    // your code here
+    console.log(usernames)
+
+    const nameList = usernames.filter(userName => (
+        String(userName).length < 10
+    ))
+    console.log(nameList)
+}
+
+validUserNames(['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']);
+
