@@ -4,7 +4,7 @@ let userInput = prompt("What do I do?")
 
 while (userInput !== "quit") {
     if (userInput === "new") {
-        const todo = prompt("Enter the things")
+        const todo = prompt("Enter the things ")
         todo_list.push(todo)
         console.log(`${todo} added to list`)
     } else if (userInput === "list") {
