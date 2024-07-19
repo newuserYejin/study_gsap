@@ -40,7 +40,7 @@ window.onload = function () {
                 end: '100% 100%',
                 // start: 'top bottom', // 애니메이션 시작 위치
                 // end: 'bottom top',   // 애니메이션 종료 위치
-                scrub: 1,
+                scrub: 1
             }
         })
             // 0%일땐 from 
